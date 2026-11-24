@@ -64,7 +64,7 @@ def scan_site_integrity(target_url, timeout=8):
             results["checks"]["cloaking"] = {"status": "consistent", "divergence_ratio": round(ratio, 2)}
 
         # 2. Hidden non-whitelisted iframes
-        raw_iframes = re.findall(r'<iframe[^>]+(?:width=["']0["']|height=["']0["']|style=["'][^"']*display:\s*none)[^>]*>', user_body, re.I)
+        raw_iframes = re.findall(r"""<iframe[^>]+(?:width=["']0["']|height=["']0["']|style=["'][^"']*display:\s*none)[^>]*>""", user_body, re.I)
         suspicious_iframes = []
         for ifr in raw_iframes:
             is_legit = any(legit in ifr.lower() for legit in LEGITIMATE_IFRAME_SUBSTRINGS)
@@ -84,7 +84,7 @@ def scan_site_integrity(target_url, timeout=8):
             results["checks"]["hidden_iframes"] = {"status": "clean"}
 
         # 3. Spam keyword injection in hidden CSS containers
-        hidden_divs = re.findall(r'style=["'][^"']*(?:display:\s*none|visibility:\s*hidden|opacity:\s*0|left:\s*-\d{3,}px)[^"']*["'][^>]*>(.*?)</div>', user_body, re.I | re.DOTALL)
+        hidden_divs = re.findall(r"""style=["'][^"']*(?:display:\s*none|visibility:\s*hidden|opacity:\s*0|left:\s*-\d{3,}px)[^"']*["'][^>]*>(.*?)</div>""", user_body, re.I | re.DOTALL)
         spam_div_matches = []
         for hdiv in hidden_divs:
             for kw in SPAM_KEYWORDS:
@@ -139,8 +139,8 @@ def scan_site_integrity(target_url, timeout=8):
 def main():
     parser = argparse.ArgumentParser(description="TAVARDT Australia - Hacked Site and SEO Spam Detector")
     parser.add_argument("target", help="Target domain or URL to inspect")
-    parser.add_argument("--json", action="store_true", help="Output results in JSON format")
-    parser.add_argument("--timeout", type=int, default=8, help="Request timeout in seconds")
+    parser.add_argument("-j", "--json", action="store_true", help="Output results in JSON format")
+    parser.add_argument("-t", "--timeout", type=int, default=8, help="Request timeout in seconds")
 
     args = parser.parse_args()
     report = scan_site_integrity(args.target, timeout=args.timeout)
