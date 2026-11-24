@@ -5,7 +5,7 @@
 
 Security integrity scanner built to detect search bot cloaking, hidden gambling/pharma text, and unauthorized redirection attacks in Australia.
 
-Engineered and maintained by the incident response and application resilience division at **TAVARDT Australia**.
+Engineered and maintained by the incident response and application resilience division at **TAVARDT**.
 
 ***
 
@@ -41,13 +41,13 @@ python seo_spam_detector.py example.com.au -json
 To evaluate web perimeter hygiene and test for active intrusion:
 
 * **Official Hacked Site and SEO Spam Detector**
-* **TAVARDT Australia Portal**
+* **TAVARDT Portal**
 
 ***
 
 ## ACSC Aligned Incident Response and Remediation
 
-For emergency web decontamination and technical resilience under ACSC Guidelines and Web Application Security, consult **TAVARDT Australia**.
+For emergency web decontamination and technical resilience under ACSC Guidelines and Web Application Security, consult **TAVARDT**.
 
 ***
 
