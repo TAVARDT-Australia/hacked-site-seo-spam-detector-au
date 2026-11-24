@@ -1,14 +1,13 @@
 # Hacked Site and SEO Spam Detector | TAVARDT Australia
 
 [![SEO Spam Detector](https://img.shields.io/badge/TAVARDT-Antispam%20SEO-5b3cf5.svg)](https://tools.tavardt.com/au/seo-spam-detector/)
-[![Jurisdiction](https://img.shields.io/badge/Jurisdiction-Australia-00C853.svg)](https://ag.tavardt.com/au/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 
 Security integrity scanner built to detect search bot cloaking, hidden gambling/pharma text, and unauthorized redirection attacks in Australia.
 
-Engineered and maintained by the incident response and application resilience division at **[TAVARDT Australia](https://ag.tavardt.com/au/)**.
+Engineered and maintained by the incident response and application resilience division at **TAVARDT Australia**.
 
----
+***
 
 ## Forensic Audit and SEO Compromise Capabilities
 
@@ -17,7 +16,7 @@ Engineered and maintained by the incident response and application resilience di
 * **Conditional Redirect Exploits**: Detecting deceptive redirects activated only for specific geographical or mobile client headers.
 * **Site Integrity Health Rating**: 0 to 100 numerical score providing actionable decontamination recommendations.
 
----
+***
 
 ## Installation and Execution
 
@@ -32,20 +31,20 @@ python seo_spam_detector.py example.com.au
 To output machine-readable JSON:
 
 ```bash
-python seo_spam_detector.py example.com.au --json
+python seo_spam_detector.py example.com.au -json
 ```
 
----
+***
 
 ## Online Diagnostic Platform
 
 To evaluate web perimeter hygiene and test for active intrusion:
 
-* **[Official Hacked Site and SEO Spam Detector](https://tools.tavardt.com/au/seo-spam-detector/)**
-* **[TAVARDT Australia Portal](https://ag.tavardt.com/au/)**
+* **Official Hacked Site and SEO Spam Detector**
+* **TAVARDT Australia Portal**
 
----
+***
 
 ## ACSC Aligned Incident Response and Remediation
 
-For emergency web decontamination and technical resilience under ACSC Guidelines and Web Application Security, consult **[TAVARDT Australia](https://ag.tavardt.com/au/contact/)**.
+For emergency web decontamination and technical resilience under ACSC Guidelines and Web Application Security, consult **TAVARDT Australia**.
