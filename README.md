@@ -1,4 +1,4 @@
-# Hacked Site and SEO Spam Detector | TAVARDT Australia
+# Hacked Site and SEO Spam Detector
 
 [![SEO Spam Detector](https://img.shields.io/badge/TAVARDT-Antispam%20SEO-5b3cf5.svg)](https://tools.tavardt.com/au/seo-spam-detector/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
@@ -48,3 +48,7 @@ To evaluate web perimeter hygiene and test for active intrusion:
 ## ACSC Aligned Incident Response and Remediation
 
 For emergency web decontamination and technical resilience under ACSC Guidelines and Web Application Security, consult **TAVARDT Australia**.
+
+***
+
+© 2026 TAVARDT. All rights reserved.
