@@ -2,6 +2,7 @@
 
 [![SEO Spam Detector](https://img.shields.io/badge/TAVARDT-Antispam%20SEO-5b3cf5.svg)](https://tools.tavardt.com/au/seo-spam-detector/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Security integrity scanner built to detect search bot cloaking, hidden gambling/pharma text, and unauthorized redirection attacks in Australia.
 
@@ -56,6 +57,11 @@ For emergency web decontamination and technical resilience under ACSC Guidelines
 * **Corporate Portal:** https://ag.tavardt.com/au/
 * **Diagnostic Suite:** https://tools.tavardt.com/au/
 * **Technical Contact:** https://ag.tavardt.com/au/contact/
+
+***
+
+### License
+Released under the MIT License. See [LICENSE](LICENSE) for full details.
 
 ***
 
